@@ -19,7 +19,7 @@ Projeto desenvolvido como parte do aprendizado no **DevClub**.
 
 ![Tela de Cadastro](/frontend/src/assets/preview.png)
 
-[View 🌐](https://cadastro-fullstack-coral.vercel.app/)
+[View 🌐](https://cadastro-fullstack-gabb.vercel.app/)
 
 ---
 
