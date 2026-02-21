@@ -96,12 +96,12 @@ node index.js
 
 ```
 cadastro-fullstack/
-├── frontend/       # Aplicação React
-│   ├── src/
-│   └── public/
 ├── backend/        # API Node + Express
 │   ├── routes/
 │   └── index.js
+├── frontend/       # Aplicação React
+│   ├── src/
+│   └── public/
 └── README.md
 ```
 
