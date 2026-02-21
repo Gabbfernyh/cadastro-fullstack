@@ -17,7 +17,7 @@ Projeto desenvolvido como parte do aprendizado no **DevClub**.
 
 ## 🖥️ Preview
 
-![Tela de Cadastro](/src/assets/preview.png)
+![Tela de Cadastro](/frontend/src/assets/preview.png)
 [View]()
 
 ---
