@@ -1,63 +1,58 @@
-# 📋 Cadastro Full-Stack
+# Cadastro Full-Stack
 
-> **Status do Projeto:**
+> **Status do projeto:**
 >
-> - Front-end ✅ Concluído
-> - Back-end 🔄 Em desenvolvimento *(previsão: 23/02)*
+> - Front-end concluido
+> - Back-end + banco de dados concluidos
+> - Deploy do front-end concluido
+> - Pendente: conexao do front-end com o back-end e deploy integrado (front + back)
 
 ---
 
-## 📖 Descrição
+## Descricao
 
-Projeto de forma full-stack com tema de cadastro de usuários, utilizando das tecnologias mais famosas e amplamente usadas no mercado de desenvolvimento web. O objetivo é aplicar e consolidar conhecimentos tanto no front-end quanto no back-end, integrando uma interface moderna com uma API robusta.
-
-Projeto desenvolvido como parte do aprendizado no **DevClub**.
+Projeto full-stack com foco em cadastro de usuarios, integrando interface web e API REST.
+Desenvolvido como parte dos estudos no **DevClub**.
 
 ---
 
-## 🖥️ Preview
+## Preview
 
 ![Tela de Cadastro](/frontend/src/assets/preview.png)
 
-[View 🌐](https://cadastro-fullstack-gabb.vercel.app/)
+[View](https://cadastro-fullstack-gabb.vercel.app/)
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 **Front-end:**
 
-- [React.js](https://reactjs.org/) — Biblioteca para construção de interfaces
+- [React.js](https://reactjs.org/) - Biblioteca para construcao de interfaces
 
 **Back-end:**
 
-- [Node.js](https://nodejs.org/) — Ambiente de execução JavaScript no servidor
-- [Express](https://expressjs.com/) — Framework para criação de APIs REST
+- [Node.js](https://nodejs.org/) - Ambiente de execucao JavaScript no servidor
+- [Express](https://expressjs.com/) - Framework para criacao de APIs REST
+
+**Banco de dados:**
+
+- [MongoDB](https://www.mongodb.com/) - Banco de dados NoSQL
+- [Mongoose](https://mongoosejs.com/) - ODM para modelagem e acesso ao MongoDB
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- Cadastro de usuários com nome, e-mail e idade
-- Geração aleatória de dados para testes
+- Cadastro de usuarios com nome, e-mail e idade
 - Interface limpa, responsiva e intuitiva
-- Integração front-end ↔ API REST (em desenvolvimento)
+- Integracao front-end com API REST
 
 ---
 
-## 📅 Histórico
+## Como rodar o projeto localmente
 
-| Data  | Evento                        |
-|-------|-------------------------------|
-| 16/02 | Início e desenvolvimento do projeto |
-| 20/02 | Deploy realizado               |
-| 23/02 | Previsão de conclusão do back-end |
-
----
-
-## 🛠️ Como rodar o projeto localmente
-
-### Pré-requisitos
+### Pre-requisitos
 
 - Node.js instalado
 - npm ou yarn
@@ -65,49 +60,49 @@ Projeto desenvolvido como parte do aprendizado no **DevClub**.
 ### Front-end
 
 ```bash
-# Clone o repositório
+# Clone o repositorio
 git clone https://github.com/gabbfernyh/cadastro-fullstack.git
 
 # Acesse a pasta do front-end
 cd frontend
 
-# Instale as dependências
+# Instale as dependencias
 npm install
 
 # Inicie o servidor de desenvolvimento
 npm start
 ```
 
-### Back-end
+### API (Back-end)
 
 ```bash
-# Acesse a pasta do back-end
-cd backend
+# Acesse a pasta da API
+cd api
 
-# Instale as dependências
+# Instale as dependencias
 npm install
 
 # Inicie o servidor
-node index.js
+npm start
 ```
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
-```
+```text
 cadastro-fullstack/
-├── backend/        # API Node + Express
-│   ├── routes/
-│   └── index.js
-├── frontend/       # Aplicação React
-│   ├── src/
-│   └── public/
-└── README.md
+|-- api/            # API Node + Express + Mongoose (MongoDB)
+|   |-- index.js
+|   `-- package.json
+|-- frontend/       # Aplicacao React
+|   |-- src/
+|   `-- public/
+`-- README.md
 ```
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
-Desenvolvido com 💙 por Gabbfernyh junto ao **Rodolfo Mori** do [DevClub](https://devclub.com.br/).
+Desenvolvido por **Gabbfernyh** junto ao **Rodolfo Mori** do [DevClub](https://devclub.com.br/).
