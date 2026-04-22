@@ -56,6 +56,13 @@ form button:hover {
   padding-right: 0.35rem;
 }
 
+.usersAlert {
+  text-align: center;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+}
+
 @media (max-width: 768px) {
   .app {
     padding: 2rem 0.85rem;

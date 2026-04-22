@@ -47,6 +47,33 @@
     color: #1f294d;
 }
 
+.user-card button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #ff4757;
+    background: linear-gradient(135deg, #ff6b7a, #ff4757);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.user-card button:hover {
+    background: linear-gradient(135deg, #ff5a69, #ff3d4a);
+    border-color: #ff3d4a;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+}
+
+.user-card button:active {
+    transform: scale(0.95);
+}
+
 @media (max-width: 768px) {
     .user-card {
         gap: 0.9rem;
@@ -66,5 +93,11 @@
     .user-card-info p {
         padding: 0.5rem 0.62rem;
         font-size: 0.88rem;
+    }
+
+    .user-card button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.9rem;
     }
 }
