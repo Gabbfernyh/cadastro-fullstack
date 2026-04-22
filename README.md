@@ -24,7 +24,7 @@ Desenvolvido como parte dos estudos no **DevClub**.
 
 ![Tela de Cadastro](/frontend/src/assets/preview.png)
 
-[View](https://cadastro-fullstack-gabb.vercel.app/)
+[View Project 🌐](https://cadastro-fullstack-gabb.vercel.app/)
 
 ---
 
