@@ -3,7 +3,8 @@
 > **Status do Projeto:**
 >
 > - Front-end ✅ Concluído
-> - Back-end 🔄 Em desenvolvimento *(previsão: 23/02)*
+> - Back-end ✅ Concluído
+> - Deploy ✅ Concluído
 
 ---
 
@@ -18,7 +19,7 @@ Projeto desenvolvido como parte do aprendizado no **DevClub**.
 ## 🖥️ Preview
 
 ![Tela de Cadastro](/frontend/src/assets/preview.png)
-[View]()
+[View](https://cadastro-fullstack-gabb.vercel.app/)
 
 ---
 
@@ -41,16 +42,6 @@ Projeto desenvolvido como parte do aprendizado no **DevClub**.
 - Geração aleatória de dados para testes
 - Interface limpa, responsiva e intuitiva
 - Integração front-end ↔ API REST (em desenvolvimento)
-
----
-
-## 📅 Histórico
-
-| Data  | Evento                        |
-|-------|-------------------------------|
-| 16/02 | Início e desenvolvimento do projeto |
-| 20/02 | Deploy realizado               |
-| 23/02 | Previsão de conclusão do back-end |
 
 ---
 
