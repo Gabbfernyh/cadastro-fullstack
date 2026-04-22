@@ -4,8 +4,12 @@
 >
 > - Front-end concluido
 > - Back-end + banco de dados concluidos
-> - Deploy do front-end concluido
-> - Pendente: conexao do front-end com o back-end e deploy integrado (front + back)
+> - Deploy completo (front + back) concluido
+
+## URLs (Produção)
+
+- Frontend (Vercel): <https://cadastro-fullstack-gabb.vercel.app/>
+- Backend (Render): <https://cadastro-fullstack-z37u.onrender.com>
 
 ---
 

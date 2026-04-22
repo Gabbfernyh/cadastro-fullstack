@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import UserCard from './components/UserCard'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000'
+const API_URL_RAW =
+  import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:3000' : '')
+const API_URL = API_URL_RAW.replace(/\/+$/, '')
 
 function App() {
   const [name, setName] = useState("")
@@ -14,12 +16,17 @@ function App() {
 
   // Buscar usuários ao carregar a página
   useEffect(() => {
+    if (!API_URL) {
+      setError('VITE_API_URL não configurado (ex.: https://sua-api.onrender.com). Configure no Vercel (Production) e faça um redeploy.')
+      return
+    }
     fetchUsers()
   }, [])
 
   // Função para buscar usuários da API
   async function fetchUsers() {
     try {
+      if (!API_URL) throw new Error('VITE_API_URL não configurado')
       const response = await fetch(`${API_URL}/users`)
       if (!response.ok) throw new Error('Erro ao buscar usuários')
       const data = await response.json()
@@ -37,6 +44,7 @@ function App() {
     setError(null)
 
     try {
+      if (!API_URL) throw new Error('VITE_API_URL não configurado')
       const response = await fetch(`${API_URL}/users`, {
         method: 'POST',
         headers: {
@@ -67,6 +75,7 @@ function App() {
 
   async function handleDelete(userId) {
     try {
+      if (!API_URL) throw new Error('VITE_API_URL não configurado')
       const response = await fetch(`${API_URL}/users/${userId}`, {
         method: 'DELETE'
       })

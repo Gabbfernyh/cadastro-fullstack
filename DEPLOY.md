@@ -2,6 +2,11 @@
 
 Aplicação de cadastro de usuários com React, Node.js, Express e MongoDB.
 
+## URLs (Produção)
+
+- Frontend (Vercel): <https://cadastro-fullstack-gabb.vercel.app/>
+- Backend (Render): defina `VITE_API_URL` com a URL do seu serviço (ex.: `https://cadastro-fullstack-z37u.onrender.com`)
+
 ## 🚀 Deploy
 
 ### Frontend (Vercel)
@@ -12,6 +17,7 @@ Aplicação de cadastro de usuários com React, Node.js, Express e MongoDB.
 4. Selecione o repositório
 5. Defina a variável de ambiente:
    - `VITE_API_URL` = URL do seu backend Render (ex: `https://seu-backend.onrender.com`)
+   - Importante: no Vercel isso é **variável de build** (Vite). Depois de configurar, faça um **redeploy** para a URL entrar no bundle.
 6. Deploy automático!
 
 ### Backend (Render)
@@ -23,6 +29,7 @@ Aplicação de cadastro de usuários com React, Node.js, Express e MongoDB.
 5. Configure:
    - **Name**: `cadastro-api`
    - **Environment**: Node
+   - **Root Directory**: `api` (se o Render pedir, porque o back-end está na pasta `api/`)
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
 6. Defina as variáveis de ambiente:

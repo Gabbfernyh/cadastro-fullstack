@@ -1,7 +1,7 @@
 services:
   - type: web
     name: cadastro-api
-    env: node
+    runtime: node
     plan: free
     startCommand: npm start
     envVars:
